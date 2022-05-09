@@ -37,7 +37,7 @@ class App extends Component {
   onUpdateFavoritePokemons(pokemonId, isFavorite) {
     updateFavoritePokemons(pokemonId, isFavorite);
 
-    this.setState(({ isPokemonFavoriteById: App.setIsPokemonFavoriteById() }));
+    this.setState({ isPokemonFavoriteById: App.setIsPokemonFavoriteById() });
   }
 
   renderPokedex() {
@@ -45,8 +45,8 @@ class App extends Component {
 
     return (
       <Pokedex
-        pokemons={ pokemons }
-        isPokemonFavoriteById={ isPokemonFavoriteById }
+        pokemons={pokemons}
+        isPokemonFavoriteById={isPokemonFavoriteById}
       />
     );
   }
@@ -56,37 +56,39 @@ class App extends Component {
 
     return (
       <PokemonDetails
-        isPokemonFavoriteById={ isPokemonFavoriteById }
-        match={ match }
-        pokemons={ pokemons }
-        onUpdateFavoritePokemons={ (pokemonId, isFavorite) => (
+        isPokemonFavoriteById={isPokemonFavoriteById}
+        match={match}
+        pokemons={pokemons}
+        onUpdateFavoritePokemons={(pokemonId, isFavorite) =>
           this.onUpdateFavoritePokemons(pokemonId, isFavorite)
-        ) }
+        }
       />
     );
   }
 
   renderRoutes() {
     const { isPokemonFavoriteById } = this.state;
-    const favoritePokemons = pokemons.filter(({ id }) => isPokemonFavoriteById[id]);
+    const favoritePokemons = pokemons.filter(
+      ({ id }) => isPokemonFavoriteById[id]
+    );
 
     return (
       <Switch>
         <Route
           exact
           path="/"
-          render={ ({ match }) => this.renderPokedex(match) }
+          render={({ match }) => this.renderPokedex(match)}
         />
         <Route
           path="/pokemons/:id"
-          render={ ({ match }) => this.renderPokemonDetails(match) }
+          render={({ match }) => this.renderPokemonDetails(match)}
         />
         <Route
           path="/favorites"
-          render={ () => <FavoritePokemons pokemons={ favoritePokemons } /> }
+          render={() => <FavoritePokemons pokemons={favoritePokemons} />}
         />
-        <Route path="/about" component={ About } />
-        <Route component={ NotFound } />
+        <Route path="/about" component={About} />
+        <Route component={NotFound} />
       </Switch>
     );
   }
