@@ -15,10 +15,12 @@ describe('Teste se é renderizado um card com as informações do pokémon', () 
     const type = screen.getByText('Electric');
     const peso = screen.getByText('Average weight: 6.0 kg');
     const imagem = screen.getByRole('img', { name: /pikachu sprite/i });
+    const imgUrl = 'https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png';
     expect(name).toBeInTheDocument();
     expect(type).toBeInTheDocument();
     expect(peso).toBeInTheDocument();
     expect(imagem).toBeInTheDocument();
+    expect(imagem.src).toBe(imgUrl);
   });
 
   test('2 - Teste o card do pokémon contém um link de navegação', () => {
