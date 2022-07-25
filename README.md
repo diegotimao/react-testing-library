@@ -6,7 +6,7 @@ Nesse projeto contém testes para uma aplicação React ultilizando a biblioteca
 
 # Habilidades
 
-Neste projeto, verificamos se você é capaz de:
+Neste projeto, foi verificado a capacidade de:
 
 * Utilizar os seletores (queries) da React-Testing-Library em testes automatizados.
 
