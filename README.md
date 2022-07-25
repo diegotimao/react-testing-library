@@ -26,4 +26,4 @@ Neste projeto, verificamos se você é capaz de:
 ​  
 ## Ilustração:
 
-![](https://blog.rocketseat.com.br/introducao-a-testing-library-testando-componentes-react/)
+![](./src/assets/ilustrator.png)
