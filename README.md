@@ -1,16 +1,29 @@
-# 🚧 README em construção 🚧
+# Testando Aplicações ReactJs  
+  
+## Objetivo: 
+Nesse projeto contém testes para uma aplicação React ultilizando a biblioteca **react-test-library**.
 
-<!-- Olá, Tryber!
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+# Habilidades
 
-É essencial que você preencha esse documento por conta própria, ok?
+Neste projeto, verificamos se você é capaz de:
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+* Utilizar os seletores (queries) da React-Testing-Library em testes automatizados.
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+* Simular eventos com a React-Testing-Library em testes automatizados.
 
--->
+* Testar fluxos lógicos assíncronos com a React-Testing-Library.
+
+* Escrever testes que permitam a refatoração da estrutura dos componentes da aplicação sem necessidade de serem alterados.
+
+* Criar mocks de APIs utilizando fetch.
+
+* Testar inputs.
+
+## Bibliotecas que contém neste projeto:
+* **[ReactJs](https://pt-br.reactjs.org/)** - Biblioteca Front-end;
+* **[react-test-library](https://testing-library.com/docs/react-testing-library/intro/)** - Biblioteca de testes em react.
+​  
+## Ilustração:
+
+![](https://blog.rocketseat.com.br/introducao-a-testing-library-testando-componentes-react/)
